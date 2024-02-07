@@ -1,0 +1,23 @@
+{% load userfilters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Def_Filter</title>
+</head>
+<body>
+    <center>
+        <h2 style="text-decoration:underline;">User Filters</h2>
+        <h2>Data : {{data}}</h2>
+        <h1>Swapping</h1>
+        <h2>{{data|swap}}</h2>
+        <h1>Remove</h1>
+        <h2>{{data|remove:'H'}}</h2>
+        <h1>Counting</h1>
+        <h2>{{data|counting:'H'}}</h2>
+        <h1>Lower</h1>
+        <h2>{{data|lower}}</h2>
+    </center>
+</body>
+</html>
